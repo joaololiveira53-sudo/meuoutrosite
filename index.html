@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anti-Tédio 🎮</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🎮 ANTI-TÉDIO</h1>
+        <p>Escolha alguma coisa e se divirta.</p>
+    </header>
+
+    <main>
+
+        <section class="card destaque">
+            <span class="emoji">🎲</span>
+            <h2>O que eu faço agora?</h2>
+            <p id="desafio">Clique no botão para descobrir.</p>
+            <button onclick="novoDesafio()">ME SURPREENDA</button>
+        </section>
+
+        <div class="grid">
+
+            <section class="card">
+                <span class="emoji">🧠</span>
+                <h2>Desafio</h2>
+                <p id="pergunta">Clique para receber uma pergunta aleatória.</p>
+                <button onclick="novaPergunta()">DESAFIO</button>
+            </section>
+
+            <section class="card">
+                <span class="emoji">🎯</span>
+                <h2>Jogo do Número</h2>
+                <p>Estou pensando em um número de 1 a 100.</p>
+
+                <input 
+                    type="number" 
+                    id="palpite" 
+                    min="1" 
+                    max="100"
+                    placeholder="Seu palpite"
+                >
+
+                <button onclick="chutar()">CHUTAR</button>
+
+                <p id="resultado"></p>
+            </section>
+
+            <section class="card">
+                <span class="emoji">😂</span>
+                <h2>Piada</h2>
+                <p id="piada">Clique para receber uma piada.</p>
+                <button onclick="novaPiada()">FAZER RIR</button>
+            </section>
+
+            <section class="card">
+                <span class="emoji">⚡</span>
+                <h2>Modo Caos</h2>
+                <p>Uma missão completamente aleatória.</p>
+                <button onclick="modoCaos()">ATIVAR</button>
+            </section>
+
+        </div>
+
+        <section class="card contador">
+            <h2>⏱️ Cronômetro do Tédio</h2>
+            <div id="tempo">00:00</div>
+
+            <div class="botoes">
+                <button onclick="iniciar()">▶ Começar</button>
+                <button onclick="pausar()">⏸ Pausar</button>
+                <button onclick="zerar()">↻ Zerar</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Feito para momentos de absoluto tédio 😎</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

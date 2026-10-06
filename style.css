@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    color: white;
+
+    background:
+        radial-gradient(circle at top left, #312e81, transparent 35%),
+        radial-gradient(circle at bottom right, #7e22ce, transparent 35%),
+        #09090f;
+
+    padding: 30px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+header h1 {
+    font-size: 48px;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #b8b8c7;
+    font-size: 17px;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+    transition: 0.25s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.destaque {
+    margin-bottom: 20px;
+    padding: 35px;
+}
+
+.destaque h2 {
+    font-size: 28px;
+}
+
+.emoji {
+    font-size: 45px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-bottom: 12px;
+}
+
+p {
+    color: #c9c9d5;
+    line-height: 1.5;
+}
+
+#desafio,
+#pergunta,
+#piada {
+    min-height: 48px;
+    margin: 15px 0;
+    font-size: 16px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+button {
+    border: none;
+    border-radius: 12px;
+    padding: 12px 20px;
+
+    background: #8b5cf6;
+    color: white;
+
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #a78bfa;
+    transform: scale(1.05);
+}
+
+input {
+    width: 140px;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin: 10px 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#resultado {
+    margin-top: 10px;
+    min-height: 25px;
+}
+
+.contador {
+    margin-top: 20px;
+}
+
+#tempo {
+    font-size: 55px;
+    font-weight: bold;
+    margin: 15px;
+    font-family: monospace;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #77778a;
+}
+
+@media (max-width: 700px) {
+    body {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 35px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
